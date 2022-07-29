@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inicio</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-slate-900">
+    <header class="shadow-lg">
+        <nav class="flex flex-wrap bg-slate-700 p-6 shadow-lg">
+            
+            <div class="flex items-center flex-shrink-0 text-white mr-6">
+                <svg class="fill-current h-8 w-8 mr-2" width="54" height="54" viewBox="0 0 54 54" xmlns="http://www.w3.org/2000/svg"><path d="M13.5 22.1c1.8-7.2 6.3-10.8 13.5-10.8 10.8 0 12.15 8.1 17.55 9.45 3.6.9 6.75-.45 9.45-4.05-1.8 7.2-6.3 10.8-13.5 10.8-10.8 0-12.15-8.1-17.55-9.45-3.6-.9-6.75.45-9.45 4.05zM0 38.3c1.8-7.2 6.3-10.8 13.5-10.8 10.8 0 12.15 8.1 17.55 9.45 3.6.9 6.75-.45 9.45-4.05-1.8 7.2-6.3 10.8-13.5 10.8-10.8 0-12.15-8.1-17.55-9.45-3.6-.9-6.75.45-9.45 4.05z"/></svg>
+            </div>
+            
+            <div class="flex-grow flex items-center justify-center ">
+
+              <div class="text-lg ">
+                <a href="/characters" class="mt-4 inline-block lg:mt-0 text-white p-1 hover:bg-orange-300 hover:rounded-md mr-4">
+                  Character
+                </a>
+                <a href="/weapons" class=" mt-4 inline-block lg:mt-0 text-white p-1 hover:bg-orange-300 hover:rounded-md mr-4">
+                  Weapons
+                </a>
+                <a href="/other" class=" mt-4 inline-block lg:mt-0 text-white p-1 hover:bg-orange-300 hover:rounded-md">
+                  Other
+                </a>
+              </div>
+              
+            </div>
+          </nav>
+    </header>
+    <div id="content">
+      <div class="container grid grid-cols-3 mx-auto bg-slate-700 mt-20  rounded-lg shadow-lg items-center pl-40 py-4">
+        <div class="" >
+            <input type="text" oninput="filtrarNombre()" class="rounded-lg mx-14 px-2" placeholder="Nombre del personaje" id="search">
+        </div>
+        
+        <div class="flex flex-wrap">
+            <button onclick="filtrar('Electric')" id="Electric-icon" class="p-1 hover:bg-slate-500 rounded-xl transition duration-300"><img src="https://api.ambr.top/assets/UI/UI_Buff_Element_Electric.png" width="40px"></button>
+            <button onclick="filtrar('Grass')" id="Grass-icon" class="p-1 hover:bg-slate-500 rounded-xl transition duration-300"><img src="https://api.ambr.top/assets/UI/UI_Buff_Element_Grass.png" width="40px"></button>
+            <button onclick="filtrar('Wind')" id="Wind-icon" class="p-1 hover:bg-slate-500 rounded-xl transition duration-300"><img src="https://api.ambr.top/assets/UI/UI_Buff_Element_Wind.png" width="40px"></button>
+            <button onclick="filtrar('Fire')" id="Fire-icon" class="p-1 hover:bg-slate-500 rounded-xl transition duration-300"><img src="https://api.ambr.top/assets/UI/UI_Buff_Element_Fire.png" width="40px"></button>
+            <button onclick="filtrar('Water')" id="Water-icon" class="p-1 hover:bg-slate-500 rounded-xl transition duration-300"><img src="https://api.ambr.top/assets/UI/UI_Buff_Element_Water.png" width="40px"></button>
+            <button onclick="filtrar('Rock')" id="Rock-icon" class="p-1 hover:bg-slate-500 rounded-xl transition duration-300"><img src="https://api.ambr.top/assets/UI/UI_Buff_Element_Rock.png" width="40px"></button>
+            <button onclick="filtrar('Ice')" id="Ice-icon" class="p-1 hover:bg-slate-500 rounded-xl transition duration-300"><img src="https://api.ambr.top/assets/UI/UI_Buff_Element_Ice.png" width="40px"></button>
+        </div>
+        <div class="flex flex-wrap">
+            <button onclick="filtrar(undefined,'WEAPON_SWORD_ONE_HAND')" id="WEAPON_SWORD_ONE_HAND-icon" class="p-1 hover:bg-slate-500 rounded-xl transition duration-300"><img src="https://api.ambr.top/assets/UI/UI_GachaTypeIcon_Sword.png" width="40px"></button>
+            <button onclick="filtrar(undefined,'WEAPON_CLAYMORE')" id="WEAPON_CLAYMORE-icon" class="p-1 hover:bg-slate-500 rounded-xl transition duration-300"><img src="https://api.ambr.top/assets/UI/UI_GachaTypeIcon_Claymore.png" width="40px"></button>
+            <button onclick="filtrar(undefined,'WEAPON_POLE')" id="WEAPON_POLE-icon" class="p-1 hover:bg-slate-500 rounded-xl transition duration-300"><img src="https://api.ambr.top/assets/UI/UI_GachaTypeIcon_Pole.png" width="40px"></button>
+            <button onclick="filtrar(undefined,'WEAPON_CATALYST')" id="WEAPON_CATALYST-icon" class="p-1 hover:bg-slate-500 rounded-xl transition duration-300"><img src="https://api.ambr.top/assets/UI/UI_GachaTypeIcon_Catalyst.png" width="40px"></button>
+            <button onclick="filtrar(undefined,'WEAPON_BOW')" id="WEAPON_BOW-icon" class="p-1 hover:bg-slate-500 rounded-xl transition duration-300"><img src="https://api.ambr.top/assets/UI/UI_GachaTypeIcon_Bow.png" width="40px"></button>
+        </div>
+    </div>
+
+    <div class="container mx-auto  mt-5 items-center justify-around flex flex-wrap px-10 mb-10">
+        
+            <div class="grid grid-cols-7 grid-flow-row gap-10 py-10" id="grid-personajes">
+                
+            </div>
+    </div>
+    </div>
+
+    <script src="prueba.js"></script>
+</body>
+</html>

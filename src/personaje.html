@@ -1,0 +1,1421 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personaje</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-slate-900">
+    <header class="shadow-lg">
+        <nav class="flex flex-wrap bg-slate-700 p-6 shadow-lg">
+            
+            <div class="flex items-center flex-shrink-0 text-white mr-6">
+                <svg class="fill-current h-8 w-8 mr-2" width="54" height="54" viewBox="0 0 54 54" xmlns="http://www.w3.org/2000/svg"><path d="M13.5 22.1c1.8-7.2 6.3-10.8 13.5-10.8 10.8 0 12.15 8.1 17.55 9.45 3.6.9 6.75-.45 9.45-4.05-1.8 7.2-6.3 10.8-13.5 10.8-10.8 0-12.15-8.1-17.55-9.45-3.6-.9-6.75.45-9.45 4.05zM0 38.3c1.8-7.2 6.3-10.8 13.5-10.8 10.8 0 12.15 8.1 17.55 9.45 3.6.9 6.75-.45 9.45-4.05-1.8 7.2-6.3 10.8-13.5 10.8-10.8 0-12.15-8.1-17.55-9.45-3.6-.9-6.75.45-9.45 4.05z"/></svg>
+            </div>
+            
+            <div class=" flex-grow flex items-center justify-center ">
+
+              <div class="text-lg ">
+                <a href="/characters" class=" mt-4 inline-block lg:mt-0 text-white p-1 hover:bg-orange-300 hover:rounded-md mr-4">
+                  Character
+                </a>
+                <a href="/weapons" class=" mt-4 inline-block lg:mt-0 text-white p-1 hover:bg-orange-300 hover:rounded-md mr-4">
+                  Weapons
+                </a>
+                <a href="/other" class=" mt-4 inline-block lg:mt-0 text-white p-1 hover:bg-orange-300 hover:rounded-md">
+                  Other
+                </a>
+              </div>
+              
+            </div>
+          </nav>
+    </header>
+    <div class="container flex flex-wrap mx-auto mt-20 shadow-lg bg-[url('https://api.ambr.top/assets/UI/namecard/UI_NameCardPic_Ganyu_P.png')] h-60 bg-cover bg-center" >
+        <div class="flex flex-wrap w-60">
+            <img src="https://api.ambr.top/assets/UI/UI_AvatarIcon_Ganyu.png" />
+        </div>
+    </div>
+    <div class="container grid grid-cols-7 mx-auto shadow-lg bg-slate-700 h-11 text-white text-lg text-center" >
+        <div class="hover:bg-slate-500 py-2 rounded-sm transition duration-300 ">
+            Skills
+        </div>
+        <div class="hover:bg-slate-500 py-2 rounded-sm transition duration-300">
+            Teams
+        </div>
+        <div class="hover:bg-slate-500  py-2 rounded-sm transition duration-300">
+            Builds
+        </div>
+        <div class="hover:bg-slate-500 py-2 rounded-sm transition duration-300">
+            Passives
+        </div >
+        <div class="hover:bg-slate-500  py-2 rounded-sm transition duration-300">
+            Constellations
+        </div>
+        <div class="hover:bg-slate-500  py-2 rounded-sm transition duration-300">
+            Ascension
+        </div>
+        <div class="hover:bg-slate-500 py-2 rounded-sm transition duration-300">
+            Showcase
+        </div>
+    </div>
+
+    <div class="container grid grid-cols-2 mx-auto  mt-4 justify-items-around gap-4">
+        
+        <div class="overflow-x-auto">
+            <table class="w-full text-sm text-slate-700 dark:text-gray-400 text-center shadow-lg">
+                <thead class="text-xs text-gray-700 uppercase bg-gray-50 dark:bg-slate-700 dark:text-gray-400">
+                    <tr>
+                        <th scope="col" class="py-3 px-6 text-white">
+                            Lv
+                        </th>
+                        <th scope="col" class="py-3 px-6 text-white">
+                            Base HP
+                        </th>
+                        <th scope="col" class="py-3 px-6 text-white">
+                            Base ATK
+                        </th>
+                        <th scope="col" class="py-3 px-6 text-white">
+                            Base DEF
+                        </th>
+                        <th scope="col" class="py-3 px-6 text-white">
+                            CRIT DMG
+                        </th>
+                        <th scope="col" class="py-3 px-6 text-white">
+                            CRIT Rate
+                        </th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr class="bg-white border-b bg-gray-800 border-gray-700 hover:bg-gray-600">
+                        <th scope="row" class="py-4 px-6 font-medium text-gray-900 whitespace-nowrap dark:text-white">
+                            1
+                        </th>
+                        <td class="py-4 px-6">
+                            763
+                        </td>
+                        <td class="py-4 px-6">
+                            26
+                        </td>
+                        <td class="py-4 px-6">
+                            49
+                        </td>
+                        <td class="py-4 px-6">
+                            50%
+                        </td>
+                        <td class="py-4 px-6">
+                            5%
+                        </td>
+                    </tr>
+                    <tr class="bg-white border-b bg-gray-900 border-gray-700 hover:bg-gray-600">
+                        <th scope="row" class="py-4 px-6 font-medium text-gray-900 whitespace-nowrap dark:text-white">
+                            1
+                        </th>
+                        <td class="py-4 px-6">
+                            763
+                        </td>
+                        <td class="py-4 px-6">
+                            26
+                        </td>
+                        <td class="py-4 px-6">
+                            49
+                        </td>
+                        <td class="py-4 px-6">
+                            50%
+                        </td>
+                        <td class="py-4 px-6">
+                            5%
+                        </td>
+                    </tr>
+                    <tr class="bg-white bg-gray-800 border-gray-700 hover:bg-gray-700">
+                        <th scope="row" class="py-4 px-6 font-medium text-gray-900 whitespace-nowrap dark:text-white">
+                            1
+                        </th>
+                        <td class="py-4 px-6">
+                            763
+                        </td>
+                        <td class="py-4 px-6">
+                            26
+                        </td>
+                        <td class="py-4 px-6">
+                            49
+                        </td>
+                        <td class="py-4 px-6">
+                            50%
+                        </td>
+                        <td class="py-4 px-6">
+                            5%
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <div class="overflow-x-auto">
+            <table class="w-full text-sm text-left text-slate-700 dark:text-gray-400 text-center shadow-lg">
+                <thead class="text-xs text-gray-700 uppercase bg-gray-50 dark:bg-slate-700 dark:text-gray-400">
+                    <tr>
+                        <th scope="col" class="py-3 px-6 text-white">
+                            RANK
+                        </th>
+                        <th scope="col" class="py-3 px-6 text-white">
+                            Lv
+                        </th>
+                        <th scope="col" class="py-3 px-6 text-white">
+                            Cost
+                        </th>
+                        <th scope="col" class="py-3 px-6 text-white">
+                            Mat 1
+                        </th>
+                        <th scope="col" class="py-3 px-6 text-white">
+                            Mat 2
+                        </th>
+                        <th scope="col" class="py-3 px-6 text-white">
+                            Mat 3
+                        </th>
+                        <th scope="col" class="py-3 px-6 text-white">
+                            Mat 4
+                        </th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr class="bg-white border-b bg-gray-800 border-gray-700 hover:bg-gray-600">
+                        <th scope="row" class="py-4 px-6 font-medium text-gray-900 whitespace-nowrap dark:text-white">
+                            1
+                        </th>
+                        <td class="py-4 px-6">
+                            20
+                        </td>
+                        <td class="py-4 px-6">
+                            20000
+                        </td>
+                        <td class="py-4 px-6">
+                            <div class="w-20 rounded-xl shadow-2xl">
+                                <div class="relative">
+                                    <img class="rounded-xl bg-slate-700" src="https://api.ambr.top/assets/UI/UI_ItemIcon_104162.png" />
+                                    <div class=" absolute bottom-0 right-0 text-md bg-yellow-50 px-2 py-1 rounded-lg rounded-tr-none rounded-bl-none text-black">
+                                        6 
+                                    </div>  
+                                </div>
+                            </div>
+                        </td>
+                        <td class="py-4 px-6">
+                            <div class="w-20 rounded-xl shadow-2xl">
+                                <div class="relative">
+                                    <img class="rounded-xl bg-slate-700" src="https://api.ambr.top/assets/UI/UI_ItemIcon_104162.png" />
+                                    <div class=" absolute bottom-0 right-0 text-md bg-yellow-50 px-2 py-1 rounded-lg rounded-tr-none rounded-bl-none text-black">
+                                        6 
+                                    </div>  
+                                </div>
+                            </div>
+                        </td>
+                        <td class="py-4 px-6">
+                            <div class="w-20 rounded-xl shadow-2xl">
+                                <div class="relative">
+                                    <img class="rounded-xl bg-slate-700" src="https://api.ambr.top/assets/UI/UI_ItemIcon_104162.png" />
+                                    <div class=" absolute bottom-0 right-0 text-md bg-yellow-50 px-2 py-1 rounded-lg rounded-tr-none rounded-bl-none text-black">
+                                        6 
+                                    </div>  
+                                </div>
+                            </div>
+                        </td>
+                        <td class="py-4 px-6">
+                            <div class="w-20 rounded-xl shadow-2xl">
+                                <div class="relative">
+                                    <img class="rounded-xl bg-slate-700" src="https://api.ambr.top/assets/UI/UI_ItemIcon_104162.png" />
+                                    <div class=" absolute bottom-0 right-0 text-md bg-yellow-50 px-2 py-1 rounded-lg rounded-tr-none rounded-bl-none text-black">
+                                        6 
+                                    </div>  
+                                </div>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr class="bg-white border-b bg-gray-900 border-gray-700 hover:bg-gray-600">
+                        <th scope="row" class="py-4 px-6 font-medium text-gray-900 whitespace-nowrap dark:text-white">
+                            2
+                        </th>
+                        <td class="py-4 px-6">
+                            20
+                        </td>
+                        <td class="py-4 px-6">
+                            20000
+                        </td>
+                        <td class="py-4 px-6">
+                            <div class="w-20 rounded-xl shadow-2xl">
+                                <div class="relative">
+                                    <img class="rounded-xl bg-slate-700" src="https://api.ambr.top/assets/UI/UI_ItemIcon_104162.png" />
+                                    <div class=" absolute bottom-0 right-0 text-md bg-yellow-50 px-2 py-1 rounded-lg rounded-tr-none rounded-bl-none text-black">
+                                        6 
+
+                                    </div>  
+                                </div>
+                            </div>
+                        </td>
+                        <td class="py-4 px-6">
+                            <div class="w-20 rounded-xl shadow-2xl">
+                                <div class="relative">
+                                    <img class="rounded-xl bg-slate-700" src="https://api.ambr.top/assets/UI/UI_ItemIcon_104162.png" />
+                                    <div class=" absolute bottom-0 right-0 text-md bg-yellow-50 px-2 py-1 rounded-lg rounded-tr-none rounded-bl-none text-black">
+                                        6 
+
+                                    </div>  
+                                </div>
+                            </div>
+                        </td>
+                        <td class="py-4 px-6">
+                            <div class="w-20 rounded-xl shadow-2xl">
+                                <div class="relative">
+                                    <img class="rounded-xl bg-slate-700" src="https://api.ambr.top/assets/UI/UI_ItemIcon_104162.png" />
+                                    <div class=" absolute bottom-0 right-0 text-md bg-yellow-50 px-2 py-1 rounded-lg rounded-tr-none rounded-bl-none text-black">
+                                        6 
+                                
+                                    </div>  
+                                </div>
+                            </div>
+                        </td>
+                        <td class="py-4 px-6">
+                            <div class="w-20 rounded-xl shadow-2xl">
+                                <div class="relative">
+                                    <img class="rounded-xl bg-slate-700" src="https://api.ambr.top/assets/UI/UI_ItemIcon_104162.png" />
+                                    <div class=" absolute bottom-0 right-0 text-md bg-yellow-50 px-2 py-1 rounded-lg rounded-tr-none rounded-bl-none text-black">
+                                        6 
+                          
+                                    </div>  
+                                </div>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr class="border-b bg-gray-800 border-gray-700 hover:bg-gray-600">
+                        <th scope="row" class="py-4 px-6 font-medium text-gray-900 whitespace-nowrap dark:text-white">
+                            2
+                        </th>
+                        <td class="py-4 px-6">
+                            20
+                        </td>
+                        <td class="py-4 px-6">
+                            20000
+                        </td>
+                        <td class="py-4 px-6">
+                            <div class="w-20 rounded-xl shadow-2xl">
+                                <div class="relative">
+                                    <img class="rounded-xl bg-slate-700" src="https://api.ambr.top/assets/UI/UI_ItemIcon_104162.png" />
+                                    <div class=" absolute bottom-0 right-0 text-md bg-yellow-50 px-2 py-1 rounded-lg rounded-tr-none rounded-bl-none text-black">
+                                        6 
+                                 
+                                    </div>  
+                                </div>
+                            </div>
+                        </td>
+                        <td class="py-4 px-6">
+                            <div class="w-20 rounded-xl shadow-2xl">
+                                <div class="relative">
+                                    <img class="rounded-xl bg-slate-700" src="https://api.ambr.top/assets/UI/UI_ItemIcon_104162.png" />
+                                    <div class=" absolute bottom-0 right-0 text-md bg-yellow-50 px-2 py-1 rounded-lg rounded-tr-none rounded-bl-none text-black">
+                                        6 
+                             
+                                    </div>  
+                                </div>
+                            </div>
+                        </td>
+                        <td class="py-4 px-6">
+                            <div class="w-20 rounded-xl shadow-2xl">
+                                <div class="relative">
+                                    <img class="rounded-xl bg-slate-700" src="https://api.ambr.top/assets/UI/UI_ItemIcon_104162.png" />
+                                    <div class=" absolute bottom-0 right-0 text-md bg-yellow-50 px-2 py-1 rounded-lg rounded-tr-none rounded-bl-none text-black">
+                                        6 
+                                 
+                                    </div>  
+                                </div>
+                            </div>
+                        </td>
+                        <td class="py-4 px-6">
+                            <div class="w-20 rounded-xl shadow-2xl">
+                                <div class="relative">
+                                    <img class="rounded-xl bg-slate-700" src="https://api.ambr.top/assets/UI/UI_ItemIcon_104162.png" />
+                                    <div class=" absolute bottom-0 right-0 text-md bg-yellow-50 px-2 py-1 rounded-lg rounded-tr-none rounded-bl-none text-black">
+                                        6 
+                                
+                                    </div>  
+                                </div>
+                            </div>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+    <div class="container mx-auto text-3xl text-white">
+        Talents
+    </div>
+    <div class="container mx-auto grid grid-cols-2">
+
+    </div>
+    <div>
+        <div>
+            <div class="container mx-auto bg-slate-700 mt-4 justify-items-center items-center">
+                <div class="container mx-auto text-xl text-white px-5 py-2 inline-block">
+                    Normal Attack: Liutian Archery
+                </div>
+            </div>
+            <div class="container grid grid-cols-8 mx-auto bg-slate-800 justify-items-center items-center">
+                <div class="">
+                    <img src="https://api.ambr.top/assets/UI/Skill_A_02.png">
+                </div>
+                <div class="pr-5 col-span-7 text-gray-300">
+                    <p><font color=#FFD780FF>Normal Attack</font>\\nPerform up to 6 consecutive shots with a bow.\\n\\n<font color=#FFD780FF>Charged Attack</font color>\\nPerform a more precise <color=#FFD780FF>Aimed Shot</color> with increased DMG.\\nWhile aiming, an icy aura will accumulate on the arrowhead before the arrow is fired. Has different effects based on how long the energy has been charged:\\n·Charge Level 1: Fires off an icy arrow that deals <color=#99FFFFFF>Cryo DMG</color>.\\n·Charge Level 2: Fires off a Frostflake Arrow that deals <color=#99FFFFFF>Cryo DMG</color>. The Frostflake Arrow blooms after hitting its target, dealing <color=#99FFFFFF>AoE Cryo DMG</color>.\\n\\n<color=#FFD780FF>Plunging Attack</color>\\nFires off a shower of arrows in mid-air before falling and striking the ground, dealing AoE DMG upon impact.</p>
+                </div>
+                <div class="overflow-x-auto col-span-8">
+                    <table class=" text-sm text-slate-700 dark:text-gray-400 text-center shadow-lg border-slate-700 border mb-5">
+                        <thead class="text-xs uppercase bg-gray-50 dark:bg-slate-900 dark:text-gray-400">
+                            <tr>
+                                <th scope="col" class="py-3 px-6 text-white">
+                                    
+                                </th>
+                                <th scope="col" class="py-3 px-6 text-white">
+                                   Lv1
+                                </th>
+                                <th scope="col" class="py-3 px-6 text-white">
+                                    Lv2
+                                </th>
+                                <th scope="col" class="py-3 px-6 text-white">
+                                    Lv3
+                                </th>
+                                <th scope="col" class="py-3 px-6 text-white">
+                                    Lv4
+                                </th>
+                                <th scope="col" class="py-3 px-6 text-white">
+                                    Lv5
+                                </th>
+                                <th scope="col" class="py-3 px-6 text-white">
+                                    Lv6
+                                </th>
+                                <th scope="col" class="py-3 px-6 text-white">
+                                    Lv7
+                                </th>
+                                <th scope="col" class="py-3 px-6 text-white">
+                                    Lv8
+                                </th>
+                                <th scope="col" class="py-3 px-6 text-white">
+                                    Lv9
+                                </th>
+                                <th scope="col" class="py-3 px-6 text-white">
+                                    Lv10
+                                </th>
+                                <th scope="col" class="py-3 px-6 text-white">
+                                    Lv11
+                                </th>
+                                <th scope="col" class="py-3 px-6 text-white">
+                                    Lv12
+                                </th>
+                                <th scope="col" class="py-3 px-6 text-white">
+                                    Lv13
+                                </th>
+                                <th scope="col" class="py-3 px-6 text-white">
+                                    Lv14
+                                </th>
+                                <th scope="col" class="py-3 px-6 text-white">
+                                    Lv15
+                                </th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr class="bg-white border-b bg-gray-800 border-gray-700 hover:bg-gray-600">
+                                <th scope="row" class="py-4 px-6 font-medium text-gray-900 whitespace-nowrap dark:text-white bg-gray-900">
+                                    Tipo daño
+                                </th>
+                                <td class="py-4 px-6">
+                                    30
+                                </td>
+                                <td class="py-4 px-6">
+                                    30
+                                </td>
+                                <td class="py-4 px-6">
+                                    30
+                                </td>
+                                <td class="py-4 px-6">
+                                    30
+                                </td>
+                                <td class="py-4 px-6">
+                                    30
+                                </td>
+                                <td class="py-4 px-6">
+                                    30
+                                </td>
+                                <td class="py-4 px-6">
+                                    30
+                                </td>
+                                <td class="py-4 px-6">
+                                    30
+                                </td>
+                                <td class="py-4 px-6">
+                                    30
+                                </td>
+                                <td class="py-4 px-6">
+                                    30
+                                </td>
+                                <td class="py-4 px-6">
+                                    30
+                                </td>
+                                <td class="py-4 px-6">
+                                    30
+                                </td>
+                                <td class="py-4 px-6">
+                                    30
+                                </td>
+                                <td class="py-4 px-6">
+                                    30
+                                </td>
+                                <td class="py-4 px-6">
+                                    30
+                                </td>
+                            </tr>
+                            <tr class="bg-white border-b bg-gray-800 border-gray-700 hover:bg-gray-600">
+                                <th scope="row" class="py-4 px-6 font-medium whitespace-nowrap dark:text-white bg-gray-900">
+                                    Tipo daño
+                                </th>
+                                <td class="py-4 px-6">
+                                    30
+                                </td>
+                                <td class="py-4 px-6">
+                                    30
+                                </td>
+                                <td class="py-4 px-6">
+                                    30
+                                </td>
+                                <td class="py-4 px-6">
+                                    30
+                                </td>
+                                <td class="py-4 px-6">
+                                    30
+                                </td>
+                                <td class="py-4 px-6">
+                                    30
+                                </td>
+                                <td class="py-4 px-6">
+                                    30
+                                </td>
+                                <td class="py-4 px-6">
+                                    30
+                                </td>
+                                <td class="py-4 px-6">
+                                    30
+                                </td>
+                                <td class="py-4 px-6">
+                                    30
+                                </td>
+                                <td class="py-4 px-6">
+                                    30
+                                </td>
+                                <td class="py-4 px-6">
+                                    30
+                                </td>
+                                <td class="py-4 px-6">
+                                    30
+                                </td>
+                                <td class="py-4 px-6">
+                                    30
+                                </td>
+                                <td class="py-4 px-6">
+                                    30
+                                </td>
+                            </tr>
+                            <tr class="bg-white border-b bg-gray-800 border-gray-700 hover:bg-gray-600">
+                                <th scope="row" class="py-4 px-6 font-medium text-gray-900 whitespace-nowrap dark:text-white bg-gray-900">
+                                    Tipo daño
+                                </th>
+                                <td class="py-4 px-6">
+                                    30
+                                </td>
+                                <td class="py-4 px-6">
+                                    30
+                                </td>
+                                <td class="py-4 px-6">
+                                    30
+                                </td>
+                                <td class="py-4 px-6">
+                                    30
+                                </td>
+                                <td class="py-4 px-6">
+                                    30
+                                </td>
+                                <td class="py-4 px-6">
+                                    30
+                                </td>
+                                <td class="py-4 px-6">
+                                    30
+                                </td>
+                                <td class="py-4 px-6">
+                                    30
+                                </td>
+                                <td class="py-4 px-6">
+                                    30
+                                </td>
+                                <td class="py-4 px-6">
+                                    30
+                                </td>
+                                <td class="py-4 px-6">
+                                    30
+                                </td>
+                                <td class="py-4 px-6">
+                                    30
+                                </td>
+                                <td class="py-4 px-6">
+                                    30
+                                </td>
+                                <td class="py-4 px-6">
+                                    30
+                                </td>
+                                <td class="py-4 px-6">
+                                    30
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+        <div>
+            <div class="container mx-auto bg-slate-700 mt-4 justify-items-center items-center">
+                <div class="container mx-auto text-xl text-white px-5 py-2 inline-block">
+                    Trail of the Qilin
+                </div>
+            </div>
+            <div class="container grid grid-cols-8 mx-auto bg-slate-800  justify-items-center items-center">
+                <div class="m-6">
+                    <img src="https://api.ambr.top/assets/UI/Skill_S_Ganyu_01.png">
+                </div>
+                <div class="pr-5 col-span-7 text-gray-300">
+                    Leaving a single Ice Lotus behind, Ganyu dashes backward, shunning all impurity and dealing <color=#99FFFFFF>AoE Cryo DMG</color>.\\n\\n<color=#FFD780FF>Ice Lotus</color>\\n·Continuously taunts surrounding opponents, attracting them to attack it.\\n·Endurance scales based on Ganyu's Max HP.\\n·Blooms profusely when destroyed or once its duration ends, dealing <color=#99FFFFFF>AoE Cryo DMG</color>.\\n\\n<i>\"You saw me, you say? You must be mistaken. I was working overtime then.\"</i>
+                </div>
+                <div class="overflow-x-auto col-span-8">
+                    <table class=" text-sm text-slate-700 dark:text-gray-400 text-center shadow-lg border-slate-700 border mb-5">
+                        <thead class="text-xs uppercase bg-gray-50 dark:bg-slate-900 dark:text-gray-400">
+                            <tr>
+                                <th scope="col" class="py-3 px-6 text-white">
+                                    
+                                </th>
+                                <th scope="col" class="py-3 px-6 text-white">
+                                   Lv1
+                                </th>
+                                <th scope="col" class="py-3 px-6 text-white">
+                                    Lv2
+                                </th>
+                                <th scope="col" class="py-3 px-6 text-white">
+                                    Lv3
+                                </th>
+                                <th scope="col" class="py-3 px-6 text-white">
+                                    Lv4
+                                </th>
+                                <th scope="col" class="py-3 px-6 text-white">
+                                    Lv5
+                                </th>
+                                <th scope="col" class="py-3 px-6 text-white">
+                                    Lv6
+                                </th>
+                                <th scope="col" class="py-3 px-6 text-white">
+                                    Lv7
+                                </th>
+                                <th scope="col" class="py-3 px-6 text-white">
+                                    Lv8
+                                </th>
+                                <th scope="col" class="py-3 px-6 text-white">
+                                    Lv9
+                                </th>
+                                <th scope="col" class="py-3 px-6 text-white">
+                                    Lv10
+                                </th>
+                                <th scope="col" class="py-3 px-6 text-white">
+                                    Lv11
+                                </th>
+                                <th scope="col" class="py-3 px-6 text-white">
+                                    Lv12
+                                </th>
+                                <th scope="col" class="py-3 px-6 text-white">
+                                    Lv13
+                                </th>
+                                <th scope="col" class="py-3 px-6 text-white">
+                                    Lv14
+                                </th>
+                                <th scope="col" class="py-3 px-6 text-white">
+                                    Lv15
+                                </th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr class="bg-white border-b bg-gray-800 border-gray-700 hover:bg-gray-600">
+                                <th scope="row" class="py-4 px-6 font-medium text-gray-900 whitespace-nowrap dark:text-white bg-gray-900">
+                                    Tipo daño
+                                </th>
+                                <td class="py-4 px-6">
+                                    30
+                                </td>
+                                <td class="py-4 px-6">
+                                    30
+                                </td>
+                                <td class="py-4 px-6">
+                                    30
+                                </td>
+                                <td class="py-4 px-6">
+                                    30
+                                </td>
+                                <td class="py-4 px-6">
+                                    30
+                                </td>
+                                <td class="py-4 px-6">
+                                    30
+                                </td>
+                                <td class="py-4 px-6">
+                                    30
+                                </td>
+                                <td class="py-4 px-6">
+                                    30
+                                </td>
+                                <td class="py-4 px-6">
+                                    30
+                                </td>
+                                <td class="py-4 px-6">
+                                    30
+                                </td>
+                                <td class="py-4 px-6">
+                                    30
+                                </td>
+                                <td class="py-4 px-6">
+                                    30
+                                </td>
+                                <td class="py-4 px-6">
+                                    30
+                                </td>
+                                <td class="py-4 px-6">
+                                    30
+                                </td>
+                                <td class="py-4 px-6">
+                                    30
+                                </td>
+                            </tr>
+                            <tr class="bg-white border-b bg-gray-800 border-gray-700 hover:bg-gray-600">
+                                <th scope="row" class="py-4 px-6 font-medium whitespace-nowrap dark:text-white bg-gray-900">
+                                    Tipo daño
+                                </th>
+                                <td class="py-4 px-6">
+                                    30
+                                </td>
+                                <td class="py-4 px-6">
+                                    30
+                                </td>
+                                <td class="py-4 px-6">
+                                    30
+                                </td>
+                                <td class="py-4 px-6">
+                                    30
+                                </td>
+                                <td class="py-4 px-6">
+                                    30
+                                </td>
+                                <td class="py-4 px-6">
+                                    30
+                                </td>
+                                <td class="py-4 px-6">
+                                    30
+                                </td>
+                                <td class="py-4 px-6">
+                                    30
+                                </td>
+                                <td class="py-4 px-6">
+                                    30
+                                </td>
+                                <td class="py-4 px-6">
+                                    30
+                                </td>
+                                <td class="py-4 px-6">
+                                    30
+                                </td>
+                                <td class="py-4 px-6">
+                                    30
+                                </td>
+                                <td class="py-4 px-6">
+                                    30
+                                </td>
+                                <td class="py-4 px-6">
+                                    30
+                                </td>
+                                <td class="py-4 px-6">
+                                    30
+                                </td>
+                            </tr>
+                            <tr class="bg-white border-b bg-gray-800 border-gray-700 hover:bg-gray-600">
+                                <th scope="row" class="py-4 px-6 font-medium text-gray-900 whitespace-nowrap dark:text-white bg-gray-900">
+                                    Tipo daño
+                                </th>
+                                <td class="py-4 px-6">
+                                    30
+                                </td>
+                                <td class="py-4 px-6">
+                                    30
+                                </td>
+                                <td class="py-4 px-6">
+                                    30
+                                </td>
+                                <td class="py-4 px-6">
+                                    30
+                                </td>
+                                <td class="py-4 px-6">
+                                    30
+                                </td>
+                                <td class="py-4 px-6">
+                                    30
+                                </td>
+                                <td class="py-4 px-6">
+                                    30
+                                </td>
+                                <td class="py-4 px-6">
+                                    30
+                                </td>
+                                <td class="py-4 px-6">
+                                    30
+                                </td>
+                                <td class="py-4 px-6">
+                                    30
+                                </td>
+                                <td class="py-4 px-6">
+                                    30
+                                </td>
+                                <td class="py-4 px-6">
+                                    30
+                                </td>
+                                <td class="py-4 px-6">
+                                    30
+                                </td>
+                                <td class="py-4 px-6">
+                                    30
+                                </td>
+                                <td class="py-4 px-6">
+                                    30
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+        <div>
+            <div class="container mx-auto bg-slate-700 mt-4 justify-items-center items-center">
+                <div class="container mx-auto text-xl text-white px-5 py-2 inline-block">
+                    Celestial Shower
+                </div>
+            </div>
+            <div class="container grid grid-cols-8 mx-auto bg-slate-800 justify-items-center items-center">
+                <div class="m-6">
+                    <img src="https://api.ambr.top/assets/UI/Skill_E_Ganyu_01.png">
+                </div>
+                <div class="pr-5 col-span-7 text-gray-300">
+                    Coalesces atmospheric frost and snow to summon a Sacred Cryo Pearl that exorcises evil.\\nDuring its ability duration, the Sacred Cryo Pearl will continuously rain down shards of ice, striking opponents within an AoE and dealing <color=#99FFFFFF>Cryo DMG</color>.\\n\\n<i>Ganyu can bring down sweet rains as a matter of course. But against demons and heretics, they become bitter, freezing snow.</i>"
+                </div>
+                <div class="overflow-x-auto col-span-8">
+                    <table class=" text-sm text-slate-700 dark:text-gray-400 text-center shadow-lg border-slate-700 border mb-5">
+                        <thead class="text-xs uppercase bg-gray-50 dark:bg-slate-900 dark:text-gray-400">
+                            <tr>
+                                <th scope="col" class="py-3 px-6 text-white">
+                                    
+                                </th>
+                                <th scope="col" class="py-3 px-6 text-white">
+                                   Lv1
+                                </th>
+                                <th scope="col" class="py-3 px-6 text-white">
+                                    Lv2
+                                </th>
+                                <th scope="col" class="py-3 px-6 text-white">
+                                    Lv3
+                                </th>
+                                <th scope="col" class="py-3 px-6 text-white">
+                                    Lv4
+                                </th>
+                                <th scope="col" class="py-3 px-6 text-white">
+                                    Lv5
+                                </th>
+                                <th scope="col" class="py-3 px-6 text-white">
+                                    Lv6
+                                </th>
+                                <th scope="col" class="py-3 px-6 text-white">
+                                    Lv7
+                                </th>
+                                <th scope="col" class="py-3 px-6 text-white">
+                                    Lv8
+                                </th>
+                                <th scope="col" class="py-3 px-6 text-white">
+                                    Lv9
+                                </th>
+                                <th scope="col" class="py-3 px-6 text-white">
+                                    Lv10
+                                </th>
+                                <th scope="col" class="py-3 px-6 text-white">
+                                    Lv11
+                                </th>
+                                <th scope="col" class="py-3 px-6 text-white">
+                                    Lv12
+                                </th>
+                                <th scope="col" class="py-3 px-6 text-white">
+                                    Lv13
+                                </th>
+                                <th scope="col" class="py-3 px-6 text-white">
+                                    Lv14
+                                </th>
+                                <th scope="col" class="py-3 px-6 text-white">
+                                    Lv15
+                                </th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr class="bg-white border-b bg-gray-800 border-gray-700 hover:bg-gray-600">
+                                <th scope="row" class="py-4 px-6 font-medium text-gray-900 whitespace-nowrap dark:text-white bg-gray-900">
+                                    Tipo daño
+                                </th>
+                                <td class="py-4 px-6">
+                                    30
+                                </td>
+                                <td class="py-4 px-6">
+                                    30
+                                </td>
+                                <td class="py-4 px-6">
+                                    30
+                                </td>
+                                <td class="py-4 px-6">
+                                    30
+                                </td>
+                                <td class="py-4 px-6">
+                                    30
+                                </td>
+                                <td class="py-4 px-6">
+                                    30
+                                </td>
+                                <td class="py-4 px-6">
+                                    30
+                                </td>
+                                <td class="py-4 px-6">
+                                    30
+                                </td>
+                                <td class="py-4 px-6">
+                                    30
+                                </td>
+                                <td class="py-4 px-6">
+                                    30
+                                </td>
+                                <td class="py-4 px-6">
+                                    30
+                                </td>
+                                <td class="py-4 px-6">
+                                    30
+                                </td>
+                                <td class="py-4 px-6">
+                                    30
+                                </td>
+                                <td class="py-4 px-6">
+                                    30
+                                </td>
+                                <td class="py-4 px-6">
+                                    30
+                                </td>
+                            </tr>
+                            <tr class="bg-white border-b bg-gray-800 border-gray-700 hover:bg-gray-600">
+                                <th scope="row" class="py-4 px-6 font-medium whitespace-nowrap dark:text-white bg-gray-900">
+                                    Tipo daño
+                                </th>
+                                <td class="py-4 px-6">
+                                    30
+                                </td>
+                                <td class="py-4 px-6">
+                                    30
+                                </td>
+                                <td class="py-4 px-6">
+                                    30
+                                </td>
+                                <td class="py-4 px-6">
+                                    30
+                                </td>
+                                <td class="py-4 px-6">
+                                    30
+                                </td>
+                                <td class="py-4 px-6">
+                                    30
+                                </td>
+                                <td class="py-4 px-6">
+                                    30
+                                </td>
+                                <td class="py-4 px-6">
+                                    30
+                                </td>
+                                <td class="py-4 px-6">
+                                    30
+                                </td>
+                                <td class="py-4 px-6">
+                                    30
+                                </td>
+                                <td class="py-4 px-6">
+                                    30
+                                </td>
+                                <td class="py-4 px-6">
+                                    30
+                                </td>
+                                <td class="py-4 px-6">
+                                    30
+                                </td>
+                                <td class="py-4 px-6">
+                                    30
+                                </td>
+                                <td class="py-4 px-6">
+                                    30
+                                </td>
+                            </tr>
+                            <tr class="bg-white border-b bg-gray-800 border-gray-700 hover:bg-gray-600">
+                                <th scope="row" class="py-4 px-6 font-medium text-gray-900 whitespace-nowrap dark:text-white bg-gray-900">
+                                    Tipo daño
+                                </th>
+                                <td class="py-4 px-6">
+                                    30
+                                </td>
+                                <td class="py-4 px-6">
+                                    30
+                                </td>
+                                <td class="py-4 px-6">
+                                    30
+                                </td>
+                                <td class="py-4 px-6">
+                                    30
+                                </td>
+                                <td class="py-4 px-6">
+                                    30
+                                </td>
+                                <td class="py-4 px-6">
+                                    30
+                                </td>
+                                <td class="py-4 px-6">
+                                    30
+                                </td>
+                                <td class="py-4 px-6">
+                                    30
+                                </td>
+                                <td class="py-4 px-6">
+                                    30
+                                </td>
+                                <td class="py-4 px-6">
+                                    30
+                                </td>
+                                <td class="py-4 px-6">
+                                    30
+                                </td>
+                                <td class="py-4 px-6">
+                                    30
+                                </td>
+                                <td class="py-4 px-6">
+                                    30
+                                </td>
+                                <td class="py-4 px-6">
+                                    30
+                                </td>
+                                <td class="py-4 px-6">
+                                    30
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+        
+    </div>
+    <div>
+        <div class="container mx-auto text-3xl text-white mt-5">
+            Talents Upgrade
+        </div>
+        <div class="container mx-auto mt-3">
+            <div class="overflow-x-auto">
+                <table class="w-full text-sm text-slate-700 dark:text-gray-400 text-center shadow-lg">
+                    <thead class="text-xs text-gray-700 uppercase bg-gray-50 dark:bg-slate-700 dark:text-gray-400">
+                        <tr>
+                            <th scope="col" class="py-3 px-6 text-white">
+                                Lv
+                            </th>
+                            <th scope="col" class="py-3 px-6 text-white">
+                                Materials
+                            </th>
+                            <th scope="col" class="py-3 px-6 text-white">
+                                Total Materials
+                            </th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr class="bg-white border-b bg-gray-800 border-gray-700 hover:bg-gray-600">
+                            <th scope="row" class="py-4 px-6 font-medium text-gray-900 whitespace-nowrap dark:text-white">
+                                1
+                            </th>
+                            <td class="py-4 px-6 ">
+                                    <div class="w-14 rounded-xl shadow-2xl inline-block mx-3">
+                                        <div class="relative">
+                                            <img class="rounded-xl bg-slate-700" src="https://api.ambr.top/assets/UI/UI_ItemIcon_104162.png" />
+                                            <div class=" absolute bottom-0 right-0 text-md bg-yellow-50 px-2 py-1 rounded-lg rounded-tr-none rounded-bl-none text-black">
+                                                6 
+                                            </div>  
+                                        </div>
+                                    </div>
+                                    <div class="w-14 rounded-xl shadow-2xl inline-block mx-3">
+                                        <div class="relative">
+                                            <img class="rounded-xl bg-slate-700" src="https://api.ambr.top/assets/UI/UI_ItemIcon_104162.png" />
+                                            <div class=" absolute bottom-0 right-0 text-md bg-yellow-50 px-2 py-1 rounded-lg rounded-tr-none rounded-bl-none text-black">
+                                                6 
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="w-14 rounded-xl shadow-2xl inline-block mx-3">
+                                        <div class="relative">
+                                            <img class="rounded-xl bg-slate-700" src="https://api.ambr.top/assets/UI/UI_ItemIcon_104162.png" />
+                                            <div class=" absolute bottom-0 right-0 text-md bg-yellow-50 px-2 py-1 rounded-lg rounded-tr-none rounded-bl-none text-black">
+                                                6 
+                                            </div>
+                                        </div>
+                                    </div>    
+                            </td>
+                            <td class="py-4 px-6">
+                                <div class="w-14 rounded-xl shadow-2xl inline-block mx-3">
+                                    <div class="relative">
+                                        <img class="rounded-xl bg-slate-700" src="https://api.ambr.top/assets/UI/UI_ItemIcon_104162.png" />
+                                        <div class=" absolute bottom-0 right-0 text-md bg-yellow-50 px-2 py-1 rounded-lg rounded-tr-none rounded-bl-none text-black">
+                                            6 
+                                        </div>  
+                                    </div>
+                                </div>
+                                <div class="w-14 rounded-xl shadow-2xl inline-block mx-3">
+                                    <div class="relative">
+                                        <img class="rounded-xl bg-slate-700" src="https://api.ambr.top/assets/UI/UI_ItemIcon_104162.png" />
+                                        <div class=" absolute bottom-0 right-0 text-md bg-yellow-50 px-2 py-1 rounded-lg rounded-tr-none rounded-bl-none text-black">
+                                            6 
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="w-14 rounded-xl shadow-2xl inline-block mx-3">
+                                    <div class="relative">
+                                        <img class="rounded-xl bg-slate-700" src="https://api.ambr.top/assets/UI/UI_ItemIcon_104162.png" />
+                                        <div class=" absolute bottom-0 right-0 text-md bg-yellow-50 px-2 py-1 rounded-lg rounded-tr-none rounded-bl-none text-black">
+                                            6 
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="w-14 rounded-xl shadow-2xl inline-block mx-3">
+                                    <div class="relative">
+                                        <img class="rounded-xl bg-slate-700" src="https://api.ambr.top/assets/UI/UI_ItemIcon_104162.png" />
+                                        <div class=" absolute bottom-0 right-0 text-md bg-yellow-50 px-2 py-1 rounded-lg rounded-tr-none rounded-bl-none text-black">
+                                            6 
+                                        </div>  
+                                    </div>
+                                </div>
+                                <div class="w-14 rounded-xl shadow-2xl inline-block mx-3">
+                                    <div class="relative">
+                                        <img class="rounded-xl bg-slate-700" src="https://api.ambr.top/assets/UI/UI_ItemIcon_104162.png" />
+                                        <div class=" absolute bottom-0 right-0 text-md bg-yellow-50 px-2 py-1 rounded-lg rounded-tr-none rounded-bl-none text-black">
+                                            6 
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="w-14 rounded-xl shadow-2xl inline-block mx-3">
+                                    <div class="relative">
+                                        <img class="rounded-xl bg-slate-700" src="https://api.ambr.top/assets/UI/UI_ItemIcon_104162.png" />
+                                        <div class=" absolute bottom-0 right-0 text-md bg-yellow-50 px-2 py-1 rounded-lg rounded-tr-none rounded-bl-none text-black">
+                                            6 
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="w-14 rounded-xl shadow-2xl inline-block mx-3">
+                                    <div class="relative">
+                                        <img class="rounded-xl bg-slate-700" src="https://api.ambr.top/assets/UI/UI_ItemIcon_104162.png" />
+                                        <div class=" absolute bottom-0 right-0 text-md bg-yellow-50 px-2 py-1 rounded-lg rounded-tr-none rounded-bl-none text-black">
+                                            6 
+                                        </div>
+                                    </div>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr class="bg-white border-b bg-gray-800 border-gray-700 hover:bg-gray-600">
+                            <th scope="row" class="py-4 px-6 font-medium text-gray-900 whitespace-nowrap dark:text-white">
+                                1
+                            </th>
+                            <td class="py-4 px-6 ">
+                                    <div class="w-14 rounded-xl shadow-2xl inline-block mx-3">
+                                        <div class="relative">
+                                            <img class="rounded-xl bg-slate-700" src="https://api.ambr.top/assets/UI/UI_ItemIcon_104162.png" />
+                                            <div class=" absolute bottom-0 right-0 text-md bg-yellow-50 px-2 py-1 rounded-lg rounded-tr-none rounded-bl-none text-black">
+                                                6 
+                                            </div>  
+                                        </div>
+                                    </div>
+                                    <div class="w-14 rounded-xl shadow-2xl inline-block mx-3">
+                                        <div class="relative">
+                                            <img class="rounded-xl bg-slate-700" src="https://api.ambr.top/assets/UI/UI_ItemIcon_104162.png" />
+                                            <div class=" absolute bottom-0 right-0 text-md bg-yellow-50 px-2 py-1 rounded-lg rounded-tr-none rounded-bl-none text-black">
+                                                6 
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="w-14 rounded-xl shadow-2xl inline-block mx-3">
+                                        <div class="relative">
+                                            <img class="rounded-xl bg-slate-700" src="https://api.ambr.top/assets/UI/UI_ItemIcon_104162.png" />
+                                            <div class=" absolute bottom-0 right-0 text-md bg-yellow-50 px-2 py-1 rounded-lg rounded-tr-none rounded-bl-none text-black">
+                                                6 
+                                            </div>
+                                        </div>
+                                    </div>    
+                            </td>
+                            <td class="py-4 px-6">
+                                <div class="w-14 rounded-xl shadow-2xl inline-block mx-3">
+                                    <div class="relative">
+                                        <img class="rounded-xl bg-slate-700" src="https://api.ambr.top/assets/UI/UI_ItemIcon_104162.png" />
+                                        <div class=" absolute bottom-0 right-0 text-md bg-yellow-50 px-2 py-1 rounded-lg rounded-tr-none rounded-bl-none text-black">
+                                            6 
+                                        </div>  
+                                    </div>
+                                </div>
+                                <div class="w-14 rounded-xl shadow-2xl inline-block mx-3">
+                                    <div class="relative">
+                                        <img class="rounded-xl bg-slate-700" src="https://api.ambr.top/assets/UI/UI_ItemIcon_104162.png" />
+                                        <div class=" absolute bottom-0 right-0 text-md bg-yellow-50 px-2 py-1 rounded-lg rounded-tr-none rounded-bl-none text-black">
+                                            6 
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="w-14 rounded-xl shadow-2xl inline-block mx-3">
+                                    <div class="relative">
+                                        <img class="rounded-xl bg-slate-700" src="https://api.ambr.top/assets/UI/UI_ItemIcon_104162.png" />
+                                        <div class=" absolute bottom-0 right-0 text-md bg-yellow-50 px-2 py-1 rounded-lg rounded-tr-none rounded-bl-none text-black">
+                                            6 
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="w-14 rounded-xl shadow-2xl inline-block mx-3">
+                                    <div class="relative">
+                                        <img class="rounded-xl bg-slate-700" src="https://api.ambr.top/assets/UI/UI_ItemIcon_104162.png" />
+                                        <div class=" absolute bottom-0 right-0 text-md bg-yellow-50 px-2 py-1 rounded-lg rounded-tr-none rounded-bl-none text-black">
+                                            6 
+                                        </div>  
+                                    </div>
+                                </div>
+                                <div class="w-14 rounded-xl shadow-2xl inline-block mx-3">
+                                    <div class="relative">
+                                        <img class="rounded-xl bg-slate-700" src="https://api.ambr.top/assets/UI/UI_ItemIcon_104162.png" />
+                                        <div class=" absolute bottom-0 right-0 text-md bg-yellow-50 px-2 py-1 rounded-lg rounded-tr-none rounded-bl-none text-black">
+                                            6 
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="w-14 rounded-xl shadow-2xl inline-block mx-3">
+                                    <div class="relative">
+                                        <img class="rounded-xl bg-slate-700" src="https://api.ambr.top/assets/UI/UI_ItemIcon_104162.png" />
+                                        <div class=" absolute bottom-0 right-0 text-md bg-yellow-50 px-2 py-1 rounded-lg rounded-tr-none rounded-bl-none text-black">
+                                            6 
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="w-14 rounded-xl shadow-2xl inline-block mx-3">
+                                    <div class="relative">
+                                        <img class="rounded-xl bg-slate-700" src="https://api.ambr.top/assets/UI/UI_ItemIcon_104162.png" />
+                                        <div class=" absolute bottom-0 right-0 text-md bg-yellow-50 px-2 py-1 rounded-lg rounded-tr-none rounded-bl-none text-black">
+                                            6 
+                                        </div>
+                                    </div>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr class="bg-white border-b bg-gray-800 border-gray-700 hover:bg-gray-600">
+                            <th scope="row" class="py-4 px-6 font-medium text-gray-900 whitespace-nowrap dark:text-white">
+                                1
+                            </th>
+                            <td class="py-4 px-6 ">
+                                    <div class="w-14 rounded-xl shadow-2xl inline-block mx-3">
+                                        <div class="relative">
+                                            <img class="rounded-xl bg-slate-700" src="https://api.ambr.top/assets/UI/UI_ItemIcon_104162.png" />
+                                            <div class=" absolute bottom-0 right-0 text-md bg-yellow-50 px-2 py-1 rounded-lg rounded-tr-none rounded-bl-none text-black">
+                                                6 
+                                            </div>  
+                                        </div>
+                                    </div>
+                                    <div class="w-14 rounded-xl shadow-2xl inline-block mx-3">
+                                        <div class="relative">
+                                            <img class="rounded-xl bg-slate-700" src="https://api.ambr.top/assets/UI/UI_ItemIcon_104162.png" />
+                                            <div class=" absolute bottom-0 right-0 text-md bg-yellow-50 px-2 py-1 rounded-lg rounded-tr-none rounded-bl-none text-black">
+                                                6 
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="w-14 rounded-xl shadow-2xl inline-block mx-3">
+                                        <div class="relative">
+                                            <img class="rounded-xl bg-slate-700" src="https://api.ambr.top/assets/UI/UI_ItemIcon_104162.png" />
+                                            <div class=" absolute bottom-0 right-0 text-md bg-yellow-50 px-2 py-1 rounded-lg rounded-tr-none rounded-bl-none text-black">
+                                                6 
+                                            </div>
+                                        </div>
+                                    </div>    
+                            </td>
+                            <td class="py-4 px-6">
+                                <div class="w-14 rounded-xl shadow-2xl inline-block mx-3">
+                                    <div class="relative">
+                                        <img class="rounded-xl bg-slate-700" src="https://api.ambr.top/assets/UI/UI_ItemIcon_104162.png" />
+                                        <div class=" absolute bottom-0 right-0 text-md bg-yellow-50 px-2 py-1 rounded-lg rounded-tr-none rounded-bl-none text-black">
+                                            6 
+                                        </div>  
+                                    </div>
+                                </div>
+                                <div class="w-14 rounded-xl shadow-2xl inline-block mx-3">
+                                    <div class="relative">
+                                        <img class="rounded-xl bg-slate-700" src="https://api.ambr.top/assets/UI/UI_ItemIcon_104162.png" />
+                                        <div class=" absolute bottom-0 right-0 text-md bg-yellow-50 px-2 py-1 rounded-lg rounded-tr-none rounded-bl-none text-black">
+                                            6 
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="w-14 rounded-xl shadow-2xl inline-block mx-3">
+                                    <div class="relative">
+                                        <img class="rounded-xl bg-slate-700" src="https://api.ambr.top/assets/UI/UI_ItemIcon_104162.png" />
+                                        <div class=" absolute bottom-0 right-0 text-md bg-yellow-50 px-2 py-1 rounded-lg rounded-tr-none rounded-bl-none text-black">
+                                            6 
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="w-14 rounded-xl shadow-2xl inline-block mx-3">
+                                    <div class="relative">
+                                        <img class="rounded-xl bg-slate-700" src="https://api.ambr.top/assets/UI/UI_ItemIcon_104162.png" />
+                                        <div class=" absolute bottom-0 right-0 text-md bg-yellow-50 px-2 py-1 rounded-lg rounded-tr-none rounded-bl-none text-black">
+                                            6 
+                                        </div>  
+                                    </div>
+                                </div>
+                                <div class="w-14 rounded-xl shadow-2xl inline-block mx-3">
+                                    <div class="relative">
+                                        <img class="rounded-xl bg-slate-700" src="https://api.ambr.top/assets/UI/UI_ItemIcon_104162.png" />
+                                        <div class=" absolute bottom-0 right-0 text-md bg-yellow-50 px-2 py-1 rounded-lg rounded-tr-none rounded-bl-none text-black">
+                                            6 
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="w-14 rounded-xl shadow-2xl inline-block mx-3">
+                                    <div class="relative">
+                                        <img class="rounded-xl bg-slate-700" src="https://api.ambr.top/assets/UI/UI_ItemIcon_104162.png" />
+                                        <div class=" absolute bottom-0 right-0 text-md bg-yellow-50 px-2 py-1 rounded-lg rounded-tr-none rounded-bl-none text-black">
+                                            6 
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="w-14 rounded-xl shadow-2xl inline-block mx-3">
+                                    <div class="relative">
+                                        <img class="rounded-xl bg-slate-700" src="https://api.ambr.top/assets/UI/UI_ItemIcon_104162.png" />
+                                        <div class=" absolute bottom-0 right-0 text-md bg-yellow-50 px-2 py-1 rounded-lg rounded-tr-none rounded-bl-none text-black">
+                                            6 
+                                        </div>
+                                    </div>
+                                </div>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+
+    <div>
+        <div class="container mx-auto text-3xl text-white mt-5">
+            Passive Talents
+        </div>
+        <div class="container mx-auto grid grid-cols-3 mt-5 justify-items-center gap-3">
+            <div class="container mx-auto bg-slate-800 items-stretch p-5 grid grid-cols-5">
+                <div class="pr-5">
+                    <img src="https://api.ambr.top/assets/UI/UI_Talent_S_Ganyu_05.png">
+                </div>
+                <div class="col-span-4">
+                    <div class="text-white text-xl pb-3">Undivided Heart</div>
+                    <div class="text-gray-300">After firing a Frostflake Arrow, the CRIT Rate of subsequent Frostflake Arrows and their resulting bloom effects is increased by 20% for 5s.</div>
+                </div>
+            </div>
+            <div class="container mx-auto bg-slate-800  items-stretch p-5 grid grid-cols-5">
+                <div class="pr-5">
+                    <img src="https://api.ambr.top/assets/UI/UI_Talent_S_Ganyu_06.png">
+                </div>
+                <div class="col-span-4">
+                    <div class="text-white text-xl pb-3">Harmony Between Heaven and Earth</div>
+                    <div class="text-gray-300"><color=#FFD780FF>Celestial Shower</color> grants a 20% <color=#99FFFFFF>Cryo DMG Bonus</color> to active party members in the AoE.</div>
+                </div>
+            </div>
+            <div class="container mx-auto bg-slate-800  items-stretch p-5 grid grid-cols-5">
+                <div class="pr-5">
+                    <img src="https://api.ambr.top/assets/UI/UI_Talent_Forge_Bow.png">
+                </div>
+                <div class="col-span-4">
+                    <div class="text-white text-xl pb-3">Preserved for the Hunt</div>
+                    <div class="text-gray-300">Refunds 15% of the ore used when crafting Bow-type weapons.</div>
+                </div>
+            </div>
+    
+        </div>
+    </div>
+    <div>
+        <div class="container mx-auto text-3xl text-white mt-5">
+            Constellations
+        </div>
+        <div class="container mx-auto grid grid-cols-1 mt-5 justify-items-center gap-3">
+            <div class="container mx-auto bg-slate-800 items-center p-5 grid grid-cols-12">
+                <div class="pr-5">
+                    <img src="https://api.ambr.top/assets/UI/UI_Talent_S_Ganyu_01.png">
+                </div>
+                <div class="col-span-10">
+                    <div class="text-white text-xl pb-3">Dew-Drinker</div>
+                    <div class="text-gray-300">Charge Level 2 Frostflake Arrows or Frostflake Arrow Blooms decrease opponents' <color=#99FFFFFF>Cryo RES</color> by 15% for 6s upon hit.\\nA hit also regenerates 2 Energy for Ganyu. This effect can only occur once per Charge Level 2 Frostflake Arrow, regardless if Frostflake Arrow itself or its Bloom hits the target.</div>
+                </div>
+            </div>
+            <div class="container mx-auto bg-slate-800 items-center p-5 grid grid-cols-12">
+                <div class="pr-5">
+                    <img src="https://api.ambr.top/assets/UI/UI_Talent_S_Ganyu_01.png">
+                </div>
+                <div class="col-span-10">
+                    <div class="text-white text-xl pb-3">Dew-Drinker</div>
+                    <div class="text-gray-300">Charge Level 2 Frostflake Arrows or Frostflake Arrow Blooms decrease opponents' <color=#99FFFFFF>Cryo RES</color> by 15% for 6s upon hit.\\nA hit also regenerates 2 Energy for Ganyu. This effect can only occur once per Charge Level 2 Frostflake Arrow, regardless if Frostflake Arrow itself or its Bloom hits the target.</div>
+                </div>
+            </div>
+            <div class="container mx-auto bg-slate-800 items-center p-5 grid grid-cols-12">
+                <div class="pr-5">
+                    <img src="https://api.ambr.top/assets/UI/UI_Talent_S_Ganyu_01.png">
+                </div>
+                <div class="col-span-10">
+                    <div class="text-white text-xl pb-3">Dew-Drinker</div>
+                    <div class="text-gray-300">Charge Level 2 Frostflake Arrows or Frostflake Arrow Blooms decrease opponents' <color=#99FFFFFF>Cryo RES</color> by 15% for 6s upon hit.\\nA hit also regenerates 2 Energy for Ganyu. This effect can only occur once per Charge Level 2 Frostflake Arrow, regardless if Frostflake Arrow itself or its Bloom hits the target.</div>
+                </div>
+            </div>
+            <div class="container mx-auto bg-slate-800 items-center p-5 grid grid-cols-12">
+                <div class="pr-5">
+                    <img src="https://api.ambr.top/assets/UI/UI_Talent_S_Ganyu_01.png">
+                </div>
+                <div class="col-span-10">
+                    <div class="text-white text-xl pb-3">Dew-Drinker</div>
+                    <div class="text-gray-300">Charge Level 2 Frostflake Arrows or Frostflake Arrow Blooms decrease opponents' <color=#99FFFFFF>Cryo RES</color> by 15% for 6s upon hit.\\nA hit also regenerates 2 Energy for Ganyu. This effect can only occur once per Charge Level 2 Frostflake Arrow, regardless if Frostflake Arrow itself or its Bloom hits the target.</div>
+                </div>
+            </div>
+            <div class="container mx-auto bg-slate-800 items-center p-5 grid grid-cols-12">
+                <div class="pr-5">
+                    <img src="https://api.ambr.top/assets/UI/UI_Talent_S_Ganyu_01.png">
+                </div>
+                <div class="col-span-10">
+                    <div class="text-white text-xl pb-3">Dew-Drinker</div>
+                    <div class="text-gray-300">Charge Level 2 Frostflake Arrows or Frostflake Arrow Blooms decrease opponents' <color=#99FFFFFF>Cryo RES</color> by 15% for 6s upon hit.\\nA hit also regenerates 2 Energy for Ganyu. This effect can only occur once per Charge Level 2 Frostflake Arrow, regardless if Frostflake Arrow itself or its Bloom hits the target.</div>
+                </div>
+            </div>
+            <div class="container mx-auto bg-slate-800 items-center p-5 grid grid-cols-12">
+                <div class="pr-5">
+                    <img src="https://api.ambr.top/assets/UI/UI_Talent_S_Ganyu_01.png">
+                </div>
+                <div class="col-span-10">
+                    <div class="text-white text-xl pb-3">Dew-Drinker</div>
+                    <div class="text-gray-300">Charge Level 2 Frostflake Arrows or Frostflake Arrow Blooms decrease opponents' <color=#99FFFFFF>Cryo RES</color> by 15% for 6s upon hit.\\nA hit also regenerates 2 Energy for Ganyu. This effect can only occur once per Charge Level 2 Frostflake Arrow, regardless if Frostflake Arrow itself or its Bloom hits the target.</div>
+                </div>
+            </div>
+
+    
+        </div>
+    </div>
+    <div class="m-10">
+        
+    </div>
+</body>
+</html>
