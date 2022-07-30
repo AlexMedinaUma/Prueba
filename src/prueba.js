@@ -80,7 +80,7 @@ function filtrarNombre(){
         var personajesArr = Object.entries(personajes.data.items);
         var personajesSorted = personajesArr.sort((a,b) => a[1].name > b[1].name ? 1 : b[1].name > a[1].name ? -1 : 0);
 
-        personajesSorted = personajesSorted.filter(p => p[1].name.toLowerCase().includes(x));
+        personajesSorted = personajesSorted.filter(p => p[1].name.toLowerCase().includes(x.toLowerCase()));
         cargar(personajesSorted);
         
     }) // 
